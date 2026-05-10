@@ -1,15 +1,4 @@
-A good README file explains your project clearly so anyone visiting your repository understands:
 
-* What the project is
-* What it does
-* How to run it
-* Technologies used
-* Features
-* Authors
-
-For your Hiring Management System project, your README can look like this:
-
-````md
 # Hiring Management System (HMS)
 
 A console-based Hiring Management System developed in C++ using Object-Oriented Programming concepts.
