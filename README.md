@@ -1,145 +1,77 @@
-
 # Hiring Management System (HMS)
 
-A console-based Hiring Management System developed in C++ using Object-Oriented Programming concepts.
+A full-stack Hiring Management System with both a **C++ console backend** and a **web frontend** deployable to Vercel.
 
 ## Features
 
+### Console (C++)
 - Recruiter Registration & Login
 - Candidate Registration & Login
-- Job Posting System
-- Job Application System
-- Application Management
-- File Handling using .txt files
+- Job Posting & Application System
+- Application Management (Accept/Reject)
 - Admin Panel
-- Persistent Data Storage
+- Persistent Data Storage (`.txt` files)
 
----
+### Web Frontend
+- Role-based dashboards (Candidate, Recruiter, Admin)
+- Job posting and application workflow
+- Skill matching and search
+- Dark mode toggle
+- Responsive design
 
-## OOP Concepts Used
+## Tech Stack
 
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
-- Composition
-- Association
-
----
-
-## Technologies Used
-
-- C++
-- STL (vector, string, fstream)
-- Object-Oriented Programming
-- File Handling
-
----
-
-## System Modules
-
-### Recruiter
-- Post jobs
-- View posted jobs
-- Manage applications
-- Accept/Reject applications
-
-### Candidate
-- Browse jobs
-- Apply to jobs
-- View submitted applications
-
-### Admin
-- View all users
-- View all jobs
-
----
-
-## File Storage
-
-The system stores data in:
-
-- `jobs.txt`
-- `applications.txt`
-- `recruiters.txt`
-- `candidates.txt`
-
----
-
-## UML Diagrams Included
-
-- Class Diagram
-- Sequence Diagrams
-- Activity Diagrams
-- State Transition Diagrams
-
----
-
-## How to Run
-
-1. Open project in Visual Studio / CodeBlocks
-2. Compile the source file
-3. Run the executable
-
-Example:
-
-```bash
-g++ main.cpp -o hms
-./hms
-````
-
----
-
-## Demo Accounts
-
-### Recruiter
-
-* Name: Ali Khan
-* Password: pass123
-
-### Candidate
-
-* Name: Abdul Basit
-* Password: mypass
-
-### Admin Code
-
-* ADMIN2024
-
----
+| Layer | Technology |
+|-------|-----------|
+| Console Backend | C++ (STL, File Handling) |
+| Web Frontend | HTML, CSS, JavaScript |
+| Web Server | Node.js (Vercel Serverless) |
 
 ## Project Structure
 
-```bash
-.
-├── main.cpp
-├── jobs.txt
-├── applications.txt
-├── recruiters.txt
-├── candidates.txt
+```
+├── main.cpp              # C++ OOP console application
+├── index.html            # Web frontend
+├── app.js                # Frontend JavaScript (SPA logic)
+├── style.css             # Frontend styles
+├── styles-fix.css        # Additional styles
+├── server.js             # Vercel serverless API
+├── vercel.json           # Vercel deployment config
 └── README.md
 ```
 
----
+## How to Run
+
+### Console (C++)
+```bash
+g++ main.cpp -o hms
+./hms
+```
+
+### Web Frontend (Vercel)
+1. Go to [vercel.com](https://vercel.com) → **Add New → Project**
+2. Import this repository
+3. Framework: **Other** → Deploy
+
+## Demo Accounts
+
+| Role | Name | Password |
+|------|------|----------|
+| Recruiter | Ali Khan | pass123 |
+| Candidate | Abdul Basit | mypass |
+| Admin | Admin Code: `ADMIN2024` | — |
+
+## OOP Concepts
+
+- **Encapsulation** — Private data with controlled access
+- **Inheritance** — Role-based class hierarchy
+- **Polymorphism** — Virtual functions for role-specific behavior
+- **Abstraction** — Interface-driven design
+- **File Handling** — Persistent storage with `.txt` files
 
 ## Authors
 
-* Abdul Basit
-* Burhan Qazi
+- **Abdul Basit** — 01-134252-002
+- **Burhan Qazi**
 
----
-
-## Course Information
-
-* Course: Object Oriented Programming (CSC210)
-* University: Bahria University
-* Semester: Spring 2026
-
----
-
-## License
-
-This project is for educational purposes only.
-
-```
-```
+BSCS — Bahria University, Spring 2026
