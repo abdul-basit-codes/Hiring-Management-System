@@ -1,0 +1,9 @@
+*.exe
+*.out
+*.o
+*.obj
+node_modules/
+.env
+.DS_Store
+*.txt
+!README.md
